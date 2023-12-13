@@ -1,8 +1,15 @@
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, Link } from 'react-router-dom'
 
 function App() {
   return (
     <>
+      <nav>
+        <ul>
+          <li>
+            <Link to='/'>Home</Link>
+          </li>
+        </ul>
+      </nav>
       <Routes>
         <Route path='/' element={<h1>My Home Page</h1>} />
 
